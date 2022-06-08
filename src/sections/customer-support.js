@@ -8,27 +8,28 @@ import img1 from 'assets/cta-2-1.png';
 
 const CustomerSupport = () => {
   return (
-    <Box as="section" sx={styles.customerSupport}>
+    <Box as="section" sx={styles.customerSupport} id="customer-support">
       <Container>
         <Grid sx={styles.row}>
           <Box sx={styles.col}>
             <Box sx={styles.content}>
               <Heading as="h3">
-                Free Customer Support to ensure what you like to expect
+                Problem
               </Heading>
-              <Text as="p">
-                We offer a risk-free trial period of up to two weeks. You will
-                only have to pay if you are happy with the developer and wish to
-                continue. If you are unsatisfied, we’ll refund payment or fix
-                issues on our dime period customers.
+
+              <Text as="p" sx={styles.specialText}>
+                Wireless Ad Hoc Networks are increasing in importance. The demand for communication networks is growing. Moreover, top-down architectures are no longer sustainable.
               </Text>
               <Text as="p" sx={styles.specialText}>
-                If you are happy with the developer and wish to continue. If you
-                are unsatisfied, we’ll refund payment or fix issues.
+                Subjects such as dynamic topology, trust among principals, sporadic availability, and the need for a dynamic environment are the main challenges of wireless communication.
               </Text>
-              <Link path="/" sx={styles.link}>
-                Learn more <FaAngleRight />
-              </Link>
+              <Text as="p" sx={styles.specialText}>
+                Background in several domains required to accomplish the tasks.
+              </Text>
+
+              <Text as="p" sx={styles.specialText}>
+              An experimentation and learning environment needed.
+              </Text>
             </Box>
           </Box>
           <Box sx={styles.col}>

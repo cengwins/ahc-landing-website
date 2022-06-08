@@ -35,9 +35,10 @@ export default function Header({ className }) {
           </Flex>
 
           <Link
-            path="/"
+            path="https://ahc.ceng.metu.edu.tr"
+            onClick={() => { window.location.href = 'https://ahc.ceng.metu.edu.tr'; }}
             ml={2}
-            label="Register Now"
+            label="Go to App"
             sx={styles.headerBtn}
             variant="buttons.primary"
           />

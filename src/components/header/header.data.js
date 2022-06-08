@@ -4,15 +4,23 @@ export default [
     label: 'Home',
   },
   {
+    path: 'customer-support',
+    label: 'Problem',
+  },
+  {
     path: 'services',
-    label: 'Services',
+    label: 'Features',
+  },
+  {
+    path: 'boost-agencies',
+    label: 'Objectives',
+  },
+  {
+    path: 'video-one',
+    label: 'Demo',
   },
   {
     path: 'testimonials',
-    label: 'Testimonials',
-  },
-  {
-    path: 'news',
-    label: 'News',
+    label: 'Team',
   },
 ];

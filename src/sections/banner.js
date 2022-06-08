@@ -1,13 +1,11 @@
 import React from 'react';
 import { Box, Container, Grid, Button, Input, Heading, Text } from 'theme-ui';
 
+import AHCLogo from '../assets/ahc.png';
+
 import Image from 'components/image';
 
-import img1 from 'assets/partner-1-1.png';
-import img2 from 'assets/partner-1-2.png';
-import img3 from 'assets/partner-1-3.png';
-
-import bannerImg from 'assets/banner-image-1-1.png';
+import ARDCLogo from 'assets/ardc.png';
 
 const Banner = () => {
   return (
@@ -16,41 +14,22 @@ const Banner = () => {
         <Grid sx={styles.grid}>
           <Box sx={styles.content}>
             <Heading as="h3">
-              Great software is built with amazing developers
+              Wireless Ad Hoc Cloud Computing, Learning and Experimentation Environment
             </Heading>
             <Text as="p">
-              We help build and manage a team of world-class developers to bring
-              your vision to life
+              We help researchers and students to create and manage their own wireless Ad Hoc Cloud Computing environment.
             </Text>
-            <Box as="form" sx={styles.form}>
-              <Box as="label" htmlFor="subscribe" variant="styles.srOnly">
-                subscribe
-              </Box>
-              <Input
-                name="subscribe"
-                id="subscribe"
-                placeholder="Subscribe newsletter"
-                sx={styles.form.input}
-              />
-              <Button type="submit" sx={styles.form.button}>
-                Subscribe
-              </Button>
-            </Box>
             <Box sx={styles.partner}>
               <Text as="span">Sponsored by:</Text>
               <Box as="div">
-                <Image src={img1} alt="" />
-              </Box>
-              <Box as="div">
-                <Image src={img2} alt="" />
-              </Box>
-              <Box as="div">
-                <Image src={img3} alt="" />
+                <Image style={{ height: '120px', objectFit: 'cover' }} src={ARDCLogo} alt="" />
               </Box>
             </Box>
           </Box>
           <Box sx={styles.image}>
-            <Image src={bannerImg} alt="" />
+            <Box sx={{ display: 'flex', flexJustifyContent: 'center', flexAlignItems: 'center', height: '100%' }}>
+              <Image style={{ objectFit: 'contain' }} src={AHCLogo} alt="" />
+            </Box>
           </Box>
         </Grid>
       </Container>
@@ -79,7 +58,7 @@ const styles = {
     h3: {
       color: 'black',
       fontWeight: 'bold',
-      lineHeight: [1.39],
+      lineHeight: [1.19],
       letterSpacing: ['-.7px', '-1.5px'],
       mb: ['15px', null, null, null, '20px'],
       width: ['100%'],

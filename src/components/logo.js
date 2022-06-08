@@ -1,7 +1,8 @@
 /** @jsx jsx */
 import { jsx, Image } from 'theme-ui';
 import { Link } from 'components/link';
-import logo from 'assets/logo.svg';
+
+import AHCLogo from 'assets/ahc.png';
 
 export default function Logo() {
   return (
@@ -11,7 +12,7 @@ export default function Logo() {
         variant: 'links.logo',
       }}
     >
-      <Image src={logo} sx={{ display: 'flex' }} alt="startup landing logo" />
+      <Image src={AHCLogo} sx={{ display: 'flex', width: '120px' }} alt="AHC" />
     </Link>
   );
 }

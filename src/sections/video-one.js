@@ -14,20 +14,12 @@ const VideoOne = () => {
     setVideoOpen(true);
   };
   return (
-    <Box as="section" sx={styles.video}>
+    <Box as="section" sx={styles.video} id="video-one">
       <Container>
         <Heading as="h3">
-          Leading companies trust us <br /> to develop software
+          Our Demo
         </Heading>
-        <Text as="p">
-          We believe it’s important for everyone to have access to software{' '}
-          <br />
-          especially when it comes to digital learning be navigate.
-        </Text>
-        <Link path="/" sx={styles.link}>
-          Explore Details <FaAngleRight />
-        </Link>
-        <Box sx={styles.videoBox}>
+        <Box sx={styles.videoBox} style={{ marginTop: '40px' }}>
           <Image src={videoImg} alt="" />
           <Link
             path="/"
@@ -42,7 +34,7 @@ const VideoOne = () => {
       <ModalVideo
         channel="youtube"
         isOpen={videoOpen}
-        videoId="Cm3U-NgJb9I"
+        videoId="m8F0mPSu3Zw"
         onClose={() => setVideoOpen(false)}
       />
     </Box>

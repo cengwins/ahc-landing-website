@@ -1,7 +1,12 @@
 /** @jsx jsx */
 import { jsx, Box, Text, Container } from 'theme-ui';
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 import { Link } from 'components/link';
 import Logo from 'components/logo';
+
+import menuItems from '../header/header.data';
+
+
 export default function Footer() {
   return (
     <footer
@@ -22,16 +27,24 @@ export default function Footer() {
         <Box sx={styles.left}>
           <Logo />
           <Text as="p">
-            &copy; {new Date().getFullYear()} All right reserved - Design &
-            Developed by RedQ, Inc
+            &copy; {new Date().getFullYear()} All right reserved - AHC CENG49X Team
           </Text>
         </Box>
         <Box sx={styles.right}>
-          <Link path="/" label="Home" />
-          <Link path="/" label="Adversite" />
-          <Link path="/" label="Supports" />
-          <Link path="/" label="Marketing" />
-          <Link path="/" label="FAQ" />
+          {menuItems.map(({ path, label }, i) => (
+            <ScrollLink
+              activeClass="active"
+              to={path}
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              key={i}
+              style={{ cursor: 'pointer' }}
+            >
+              {label}
+            </ScrollLink>
+          ))}
         </Box>
       </Container>
     </footer>

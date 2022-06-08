@@ -7,39 +7,32 @@ import { IoIosCheckmarkCircle } from 'react-icons/io';
 import { FaAngleRight } from 'react-icons/fa';
 import image1 from 'assets/boost-1-1.png';
 
+const objectives = [
+  'Flexible simulation environments with USRP devices.',
+  'Students, engineers, and researchers',
+  'Shorten the learning curve'
+];
+
 const BoostAgencies = () => {
   return (
-    <Box sx={styles.boostAgencies}>
+    <Box sx={styles.boostAgencies} id="boost-agencies">
       <Container>
         <Box sx={styles.row}>
           <Flex sx={styles.col}>
             <Box sx={styles.content}>
               <Box sx={styles.titleBox}>
                 <Heading as="h3">
-                  Boost your agencies by choosing Ninja Developers
+                  Objectives
                 </Heading>
-                <Text as="p">
-                  Create custom landing pages with Shades that convert more
-                  visitors than any website, no coding required.
-                </Text>
               </Box>
               <Box as="ul" sx={styles.list}>
-                <Text as="li">
-                  <IoIosCheckmarkCircle />
-                  Unlimited design possibility
-                </Text>
-                <Text as="li">
-                  <IoIosCheckmarkCircle />
-                  Completely responsive features
-                </Text>
-                <Text as="li">
-                  <IoIosCheckmarkCircle />
-                  Easy to customize plugins
-                </Text>
+                {objectives.map((objective, index) => (
+                  <Text as="li" key={index}>
+                    <IoIosCheckmarkCircle />
+                    {objective}
+                  </Text>
+                ))}
               </Box>
-              <Link path="/" sx={styles.link}>
-                Learn more <FaAngleRight />
-              </Link>
             </Box>
           </Flex>
           <Flex sx={styles.col}>

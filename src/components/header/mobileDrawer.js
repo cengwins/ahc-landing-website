@@ -74,8 +74,10 @@ const MobileDrawer = () => {
           </Box>
 
           <Box sx={styles.menuFooter}>
-            <Button variant="primary" sx={styles.button}>
-              Register Now
+            <Button variant="primary" sx={styles.button}
+              onClick={() => { window.location.href = 'https://ahc.ceng.metu.edu.tr'; }}
+              >
+              Go To App
             </Button>
           </Box>
         </Box>

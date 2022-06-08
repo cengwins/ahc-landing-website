@@ -19,14 +19,13 @@ export default function IndexPage() {
     <ThemeProvider theme={theme}>
       <StickyProvider>
         <Layout>
-          <SEO title="Startup Landing 006" />
+          <SEO title="AHC" />
           <Banner />
-          <Services />
-          <BoostAgencies />
-          <VideoOne />
-          <Testimonials />
-          <CustomerSupport />
-          <Feature />
+          <CustomerSupport /> {/* problem */}
+          <Services /> {/* features */}
+          <BoostAgencies /> {/* objectives */}
+          <VideoOne /> {/* demo */}
+          <Testimonials /> {/* team */}
           <CallToAction />
         </Layout>
       </StickyProvider>

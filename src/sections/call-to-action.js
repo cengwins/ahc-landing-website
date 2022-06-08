@@ -8,11 +8,10 @@ const CallToAction = () => {
       <Container sx={styles.container}>
         <Box sx={styles.inner}>
           <Heading as="h3">
-            Hire the world’s best developers <br />
-            and designers around!
+            Start Building Now
           </Heading>
           <Box sx={styles.btnWrapper}>
-            <Button sx={styles.btn}>HIRE DEVELOPERS</Button>
+            <Button sx={styles.btn} onClick={() => {window.location.href='https://ahc.ceng.metu.edu.tr';}}>Go to App</Button>
           </Box>
         </Box>
       </Container>
